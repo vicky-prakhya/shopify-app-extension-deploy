@@ -2,7 +2,7 @@
 
 client_id = "6f7e1eb70b9023bc191634238bdf9c1c"
 name = "bundle-step"
-application_url = "https://example.com"
+application_url = "https://shopify-app-extension-deploy.onrender.com"
 embedded = true
 
 [build]
@@ -17,4 +17,4 @@ api_version = "2025-10"
 scopes = "read_content,read_online_store_pages,write_cart_transforms,write_content,write_online_store_pages,write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://shopify-app-extension-deploy.onrender.com/api/auth" ]
