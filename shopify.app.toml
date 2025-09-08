@@ -1,0 +1,31 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "9b0bb921ebc6d7016c8e04663328f2e1"
+name = "Bundle Step"
+handle = "bundle-step"
+application_url = "https://fitting-pdt-forestry-conflict.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_content,write_online_store_pages,write_cart_transforms,read_content,read_online_store_pages"
+
+[auth]
+redirect_urls = ["https://fitting-pdt-forestry-conflict.trycloudflare.com/auth/callback", "https://fitting-pdt-forestry-conflict.trycloudflare.com/auth/shopify/callback", "https://fitting-pdt-forestry-conflict.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false

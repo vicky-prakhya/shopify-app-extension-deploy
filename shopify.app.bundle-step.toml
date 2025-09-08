@@ -1,0 +1,20 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "6f7e1eb70b9023bc191634238bdf9c1c"
+name = "bundle-step"
+application_url = "https://example.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2025-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_content,read_online_store_pages,write_cart_transforms,write_content,write_online_store_pages,write_products"
+
+[auth]
+redirect_urls = [ "https://example.com/api/auth" ]
