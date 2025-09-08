@@ -17,4 +17,5 @@ api_version = "2025-10"
 scopes = "read_content,read_online_store_pages,write_cart_transforms,write_content,write_online_store_pages,write_products"
 
 [auth]
-redirect_urls = [ "https://shopify-app-extension-deploy.onrender.com/api/auth" ]
+redirect_urls = ["https://shopify-app-extension-deploy.onrender.com/auth/callback", "https://shopify-app-extension-deploy.onrender.com/auth/shopify/callback", "https://shopify-app-extension-deploy.onrender.com/api/auth/callback"]
+
